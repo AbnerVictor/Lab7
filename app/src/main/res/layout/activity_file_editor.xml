@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/filename_outer"
+        android:layout_marginTop="30dp"
+        android:text="File Editor"
+        android:textSize="25sp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:id="@+id/editortext"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editortext"
+        android:layout_marginTop="10dp"
+        android:id="@+id/filename_outer"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:hint="File name"
+            android:singleLine="true"
+            android:id="@+id/filename"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filename_outer"
+        app:layout_constraintBottom_toTopOf="@id/save_btn"
+        android:layout_marginTop="10dp"
+        android:id="@+id/filecontent_outer"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:hint="File content here"
+            android:gravity="top"
+            android:id="@+id/filecontent"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/filecontent_outer"
+        app:layout_constraintLeft_toLeftOf="@id/delete_btn"
+        app:layout_constraintRight_toLeftOf="@id/load_btn"
+        app:layout_constraintBottom_toTopOf="@id/delete_btn"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:layout_marginTop="20dp"
+        android:text="SAVE"
+        android:id="@+id/save_btn"
+        />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/save_btn"
+        app:layout_constraintRight_toLeftOf="@id/clear_btn"
+        app:layout_constraintTop_toTopOf="@id/save_btn"
+        android:layout_marginStart="3dp"
+        android:text="LOAD"
+        android:id="@+id/load_btn"
+        />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/load_btn"
+        app:layout_constraintRight_toRightOf="@id/delete_btn"
+        app:layout_constraintTop_toTopOf="@id/load_btn"
+        android:layout_marginStart="3dp"
+        android:text="CLEAR"
+        android:id="@+id/clear_btn"
+        />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/save_btn"
+        app:layout_constraintBottom_toTopOf="@id/logout_btn"
+        android:layout_marginTop="5dp"
+        android:text="DELETE"
+        android:textColor="@color/colorRed"
+        android:id="@+id/delete_btn"
+        />
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/delete_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="5dp"
+        android:text="LOGOUT"
+        android:id="@+id/logout_btn"
+        />
+
+</android.support.constraint.ConstraintLayout>

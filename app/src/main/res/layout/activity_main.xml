@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.abnervictor.lab7.MainActivity">
+
+    <include
+        android:id="@+id/new_password_layout"
+        layout="@layout/new_password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <include
+        android:id="@+id/enter_password_layout"
+        layout="@layout/enter_password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="20dp"
+        android:text="OK"
+        android:id="@+id/ok_btn"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/ok_btn"
+        app:layout_constraintTop_toTopOf="@id/ok_btn"
+        android:layout_marginStart="3dp"
+        android:text="CLEAR"
+        android:id="@+id/clr_btn"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
