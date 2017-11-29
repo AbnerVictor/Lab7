@@ -101,7 +101,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/save_btn"
-        app:layout_constraintBottom_toTopOf="@id/logout_btn"
+        app:layout_constraintBottom_toTopOf="@id/allfiles_btn"
         android:layout_marginTop="5dp"
         android:text="DELETE"
         android:textColor="@color/colorRed"
@@ -115,8 +115,8 @@
         app:layout_constraintTop_toBottomOf="@id/delete_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginTop="5dp"
-        android:text="LOGOUT"
-        android:id="@+id/logout_btn"
+        android:text="CHECK ALL FILES"
+        android:id="@+id/allfiles_btn"
         />
 
 </android.support.constraint.ConstraintLayout>
