@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this,"密码正确",Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(MainActivity.this,FileEditActivity.class);
                         startActivity(intent);
+                        finish();
                     }//密码正确，进入文件管理
                     else if (errorCnt >= 5){
                         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
