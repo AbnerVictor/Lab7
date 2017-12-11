@@ -107,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
                                 newPasswordIsNeeded = true;
                                 switchPwInterface();
                                 //清空用户文件
+                                //清空用户文件
                                 FileHelper fileHelper = new FileHelper();
                                 fileHelper.deleteAllFiles(MainActivity.this);
                                 //

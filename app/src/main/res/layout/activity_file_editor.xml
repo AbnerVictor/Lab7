@@ -12,14 +12,13 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/filename_outer"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:text="File Editor"
         android:textSize="25sp"
         android:textColor="@color/colorAccent"
-        app:layout_constraintVertical_chainStyle="packed"
         android:id="@+id/editortext"
         />
+
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="350dp"
@@ -27,6 +26,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editortext"
+        app:layout_constraintVertical_chainStyle="spread"
         android:layout_marginTop="10dp"
         android:id="@+id/filename_outer"
         >
@@ -42,7 +42,7 @@
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="350dp"
-        android:layout_height="250dp"
+        android:layout_height="0dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/filename_outer"
@@ -115,6 +115,7 @@
         app:layout_constraintTop_toBottomOf="@id/delete_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
         android:text="CHECK ALL FILES"
         android:id="@+id/allfiles_btn"
         />
